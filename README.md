@@ -4,5 +4,5 @@
 
 Author Information
 ------------------
-- [CastawayEGR](https://github.com/CastawayEGR)
+- [CastawayEGR](https://github.com/CastawayEGR) *Deserves most of the credit!*
 - [LennySh](https://github.com/lennysh)
