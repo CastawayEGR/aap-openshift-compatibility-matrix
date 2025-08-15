@@ -1,4 +1,4 @@
-### Red Hat Ansible Automation Platform 2.4 - OpenShift Operator Component versions
+# Red Hat Ansible Automation Platform 2.4 - OpenShift Operator Component versions
 
 | Release Date      | Operator CSV (Cluster-scoped)    | Operator CSV (Namespace-scoped)  | OpenShift Support        | Controller | EDA   | Hub   | Lightspeed | Receptor | Release Notes                                                                                                                                                                            | Notes                                   |
 | ----------------- | -------------------------------- | -------------------------------- | ------------------------ | ---------- | ----- | ----- | ---------- | -------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | --------------------------------------- |
