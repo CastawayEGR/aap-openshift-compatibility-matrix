@@ -2,20 +2,20 @@
 
 | Release Date      | Operator CSV (Cluster-scoped)    | Operator CSV (Namespace-scoped)  | OpenShift Support        | Controller | EDA   | Hub   | Lightspeed | Receptor | Release Notes                                                                                                                                                                            | Notes                                   |
 | ----------------- | -------------------------------- | -------------------------------- | ------------------------ | ---------- | ----- | ----- | ---------- | -------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | --------------------------------------- |
-| | | aap-operator.v2.4.0-0.1702352195 | `4.16` | 4.5.0 | | | | 1.4.3 | | |
-| | | aap-operator.v2.4.0-0.1707506910 | `4.16` | 4.5.1 | | | | 1.4.3 | | |
-| | | aap-operator.v2.4.0-0.1708974895 | `4.16` | 4.5.2 | | | | 1.4.4 | | |
-| | | aap-operator.v2.4.0-0.1711590540 | `4.16` | 4.5.5 | | | | 1.4.5 | | |
-| | | aap-operator.v2.4.0-0.1713466670 | `4.16` | 4.5.6 | | | | 1.4.5 | | |
-| | | aap-operator.v2.4.0-0.1715898994 | `4.16` | 4.5.6 | | | | 1.4.5 | | |
-| | | aap-operator.v2.4.0-0.1717558474 | `4.16` | 4.5.7 | | | | 1.4.8 | | |
-| | | aap-operator.v2.4.0-0.1718152210 | `4.16` | 4.5.7 | | | | 1.4.8 | | |
-| | | aap-operator.v2.4.0-0.1720482179 | `4.16` | 4.5.8 | | | | 1.4.8 | | |
-| | | aap-operator.v2.4.0-0.1725256739 | `4.16` | 4.5.x | | | | | | DEAD release due to ose-kube-rbac-proxy |
-| | | aap-operator.v2.4.0-0.1726111413 | `4.16` | 4.5.11 | | | | 1.4.8 | | |
-| | | aap-operator.v2.4.0-0.1727257740 | `4.16` / `4.17` | 4.5.12 | | | | 1.4.8 | | |
-| | | aap-operator.v2.4.0-0.1730152858 | `4.16` / `4.17` | 4.5.12 | | | | 1.4.9 | | |
-| December 3, 2024 | aap-operator.v2.4.0-0.1733186 | aap-operator.v2.4.0-0.1733185647 | `4.16` / `4.17` | 4.5.13 | 1.0.7 | 4.9.2 | 2.4.241127 | 1.5.1 | [Release Notes](https://docs.redhat.com/en/documentation/red_hat_ansible_automation_platform/2.4/html-single/red_hat_ansible_automation_platform_release_notes/index#async-24-6-3-dec) | |
+| | aap-operator.v2.4.0-0.1702352614 | aap-operator.v2.4.0-0.1702352195 | `4.16` | 4.5.0 | | | | 1.4.3 | | |
+| | aap-operator.v2.4.0-0.1707507304 | aap-operator.v2.4.0-0.1707506910 | `4.16` | 4.5.1 | | | | 1.4.3 | | |
+| | aap-operator.v2.4.0-0.1708975279 | aap-operator.v2.4.0-0.1708974895 | `4.16` | 4.5.2 | | | | 1.4.4 | | |
+| | aap-operator.v2.4.0-0.1711591330 | aap-operator.v2.4.0-0.1711590540 | `4.16` | 4.5.5 | | | | 1.4.5 | | |
+| | aap-operator.v2.4.0-0.1713467078 | aap-operator.v2.4.0-0.1713466670 | `4.16` | 4.5.6 | | | | 1.4.5 | | |
+| | aap-operator.v2.4.0-0.1715899379 | aap-operator.v2.4.0-0.1715898994 | `4.16` | 4.5.6 | | | | 1.4.5 | | |
+| | aap-operator.v2.4.0-0.1717558885 | aap-operator.v2.4.0-0.1717558474 | `4.16` | 4.5.7 | | | | 1.4.8 | | |
+| | aap-operator.v2.4.0-0.1718152680 | aap-operator.v2.4.0-0.1718152210 | `4.16` | 4.5.7 | | | | 1.4.8 | | |
+| | aap-operator.v2.4.0-0.1720482740 | aap-operator.v2.4.0-0.1720482179 | `4.16` | 4.5.8 | | | | 1.4.8 | | |
+| | aap-operator.v2.4.0-0.1725257213 | aap-operator.v2.4.0-0.1725256739 | `4.16` | 4.5.x | | | | | | DEAD release due to ose-kube-rbac-proxy |
+| | aap-operator.v2.4.0-0.1726111804 | aap-operator.v2.4.0-0.1726111413 | `4.16` | 4.5.11 | | | | 1.4.8 | | |
+| | aap-operator.v2.4.0-0.1727259094 | aap-operator.v2.4.0-0.1727257740 | `4.16` / `4.17` | 4.5.12 | | | | 1.4.8 | | |
+| | aap-operator.v2.4.0-0.1730153340 | aap-operator.v2.4.0-0.1730152858 | `4.16` / `4.17` | 4.5.12 | | | | 1.4.9 | | |
+| December 3, 2024 | aap-operator.v2.4.0-0.1733186325 | aap-operator.v2.4.0-0.1733185647 | `4.16` / `4.17` | 4.5.13 | 1.0.7 | 4.9.2 | 2.4.241127 | 1.5.1 | [Release Notes](https://docs.redhat.com/en/documentation/red_hat_ansible_automation_platform/2.4/html-single/red_hat_ansible_automation_platform_release_notes/index#async-24-6-3-dec) | |
 | December 18, 2024 | aap-operator.v2.4.0-0.1733945743 | aap-operator.v2.4.0-0.1733943951 | `4.16` / `4.17` | 4.5.15 | 1.0.7 | 4.9.2 | 2.4.241210 | 1.5.1 | [Release Notes](https://docs.redhat.com/en/documentation/red_hat_ansible_automation_platform/2.4/html-single/red_hat_ansible_automation_platform_release_notes/index#async-24-12-18-dec) | |
 | January 29, 2025 | aap-operator.v2.4.0-0.1737662040 | aap-operator.v2.4.0-0.1737661496 | `4.16` / `4.17` | 4.5.17 | 1.0.7 | 4.9.2 | 2.4.250121 | 1.5.1 | [Release Notes](https://docs.redhat.com/en/documentation/red_hat_ansible_automation_platform/2.4/html-single/red_hat_ansible_automation_platform_release_notes/index#async-24-20250129) | |
 | March 12, 2025 | aap-operator.v2.4.0-0.1741194557 | aap-operator.v2.4.0-0.1741194076 | `4.16` / `4.17` | 4.5.19 | 1.0.7 | 4.9.2 | 2.4.250225 | 1.5.3 | [Release Notes](https://docs.redhat.com/en/documentation/red_hat_ansible_automation_platform/2.4/html-single/red_hat_ansible_automation_platform_release_notes/index#async-24-20250312) | |
