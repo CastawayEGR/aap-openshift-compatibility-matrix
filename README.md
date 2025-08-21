@@ -15,31 +15,27 @@ For easy viewing, the raw data has been converted into user-friendly Markdown ta
 
 The core of this repository is a simple, automated workflow designed for clarity and easy maintenance.
 
-1.  **Raw Data**: All version information is maintained in the **[data/AAP_ALL.csv](./data/AAP_ALL.csv)** file. This is the single source of truth for the entire repository and the only file that should be edited manually.
+1.  **Raw Data**: All version information is maintained in respective `AAP_2x.csv` files. These are the single source of truth for the entire repository and the only files that should be edited manually.
 
-2.  **Conversion Script**: A bash script (`csv2md.sh`) reads the `data/AAP_ALL.csv` file. This script can filter rows, remove columns, and format URLs into clickable links.
+2.  **Conversion Script**: A bash script (`csv2md.sh`) reads the `AAP_2x.csv` files. This script can filter rows, remove columns, and format URLs into clickable links.
 
-3.  **Markdown Output**: The script processes the data and generates the two Markdown files (`AAP_24.md` and `AAP_25.md`), creating clean, readable tables.
+3.  **Markdown Output**: The script processes the data from each `AAP_2x.csv` file and generates the two Markdown files (`AAP_24.md` and `AAP_25.md`), creating clean, readable tables.
 
 ### Automation Example
 
-The Markdown files are generated using the `csv2md.sh` script included in this repository. For example, to regenerate the AAP 2.4 table, the following command is used:
+The Markdown files are automatically generated using the `csv2md.sh` script included in this repository. For example, to regenerate the AAP 2.5 table, the following command is used:
 
 ```bash
 ./scripts/csv2md.sh \
-  -t "Red Hat Ansible Automation Platform 2.4 - OpenShift Operator Component versions" \
-  -F "AAP Ver.=2.4" \
-  -R "AAP Ver." \
-  ./data/AAP_ALL.csv > AAP_24.md
+  -t "Red Hat Ansible Automation Platform 2.5 - OpenShift Operator Component versions" \
+  ./data/AAP_25.csv > AAP_25.md
 ```
-
-This command creates a titled table, filters the CSV to only include rows where `AAP Ver.` is `2.4`, and removes the now-redundant "AAP Ver." column before saving the output.
 
 ## 🤝 Contributing
 
 Found a mistake or have an update for a new release? Contributions are highly encouraged!
 
-To contribute, please **submit a pull request with your changes to the `data/AAP_ALL.csv` file only**. Do not edit the Markdown files directly, as they are overwritten by the automation script. Once your pull request is merged, the script can be re-run to update the tables.
+To contribute, please **submit a pull request with your changes to the `AAP_2x.csv` files only**. Do not edit the Markdown files directly, as they are overwritten by the automation script. Once your pull request is merged, the script will be re-run to update the tables.
 
 ## ✨ Contributors
 
