@@ -9,7 +9,8 @@ on:
     branches:
       - main
     paths:
-      - 'data/AAP_ALL.csv'
+      - 'data/AAP_24.csv'
+      - 'data/AAP_25.csv'
 
 # A workflow run is made up of one or more jobs that can run sequentially or in parallel
 jobs:
@@ -33,18 +34,14 @@ jobs:
         run: |
           ./scripts/csv2md.sh \
             -t "Red Hat Ansible Automation Platform 2.4 - OpenShift Operator Component versions" \
-            -F "AAP Ver.=2.4" \
-            -R "AAP Ver." \
-            ./data/AAP_ALL.csv > AAP_24.md
+            ./data/AAP_24.csv > AAP_24.md
 
       # 4. Generate the Markdown file for AAP 2.5
       - name: Generate AAP 2.5 Markdown Table
         run: |
           ./scripts/csv2md.sh \
             -t "Red Hat Ansible Automation Platform 2.5 - OpenShift Operator Component versions" \
-            -F "AAP Ver.=2.5" \
-            -R "AAP Ver." \
-            ./data/AAP_ALL.csv > AAP_25.md
+            ./data/AAP_25.csv > AAP_25.md
 
       # 5. Commit the updated Markdown files back to the repository
       - name: Commit and push changes
