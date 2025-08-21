@@ -11,7 +11,7 @@
 |  | aap-operator.v2.4.0-0.1717558885 | aap-operator.v2.4.0-0.1717558474 | 4.10-4.17 | 4.5.7 |  |  |  | 1.4.8 |  |  |
 |  | aap-operator.v2.4.0-0.1718152680 | aap-operator.v2.4.0-0.1718152210 | 4.10-4.17 | 4.5.7 |  |  |  | 1.4.8 |  |  |
 |  | aap-operator.v2.4.0-0.1720482740 | aap-operator.v2.4.0-0.1720482179 | 4.10-4.17 | 4.5.8 |  |  |  | 1.4.8 |  |  |
-|  | aap-operator.v2.4.0-0.1725257213 | aap-operator.v2.4.0-0.1725256739 | 4.10-4.17 | 4.5.x |  |  |  |  |  | DEAD release due to ose-kube-rbac-proxy |
+|  | aap-operator.v2.4.0-0.1725257213 | aap-operator.v2.4.0-0.1725256739 | 4.10-4.17 | 4.5.xx |  |  |  |  |  | DEAD release due to ose-kube-rbac-proxy |
 |  | aap-operator.v2.4.0-0.1726111804 | aap-operator.v2.4.0-0.1726111413 | 4.10-4.17 | 4.5.11 |  |  |  | 1.4.8 |  |  |
 |  | aap-operator.v2.4.0-0.1727259094 | aap-operator.v2.4.0-0.1727257740 | 4.10-4.17 | 4.5.12 |  |  |  | 1.4.8 |  |  |
 |  | aap-operator.v2.4.0-0.1730153340 | aap-operator.v2.4.0-0.1730152858 | 4.10-4.17 | 4.5.12 |  |  |  | 1.4.9 |  |  |
