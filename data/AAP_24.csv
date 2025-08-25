@@ -8,7 +8,7 @@ Release Date,Operator CSV (Cluster-scoped),Operator CSV (Namespace-scoped),OpenS
 ,aap-operator.v2.4.0-0.1717558885,aap-operator.v2.4.0-0.1717558474,4.10-4.17,4.5.7,1.4.8,6.2.7,1.0.7,4.9.2,,,
 ,aap-operator.v2.4.0-0.1718152680,aap-operator.v2.4.0-0.1718152210,4.10-4.17,4.5.7,1.4.8,6.2.7,1.0.7,4.9.2,1.0.0,,
 ,aap-operator.v2.4.0-0.1720482740,aap-operator.v2.4.0-0.1720482179,4.10-4.17,4.5.8,1.4.8,6.2.7,1.0.7,4.9.2,1.0.1,,
-,aap-operator.v2.4.0-0.1725257213,aap-operator.v2.4.0-0.1725256739,4.10-4.17,4.5.x,1.4.8,6.2.7,1.0.7,4.9.2,1.0.2,,DEAD release due to ose-kube-rbac-proxy
+,aap-operator.v2.4.0-0.1725257213,aap-operator.v2.4.0-0.1725256739,4.10-4.17,4.5.10,1.4.8,6.2.7,1.0.7,4.9.2,1.0.2,,DEAD release due to ose-kube-rbac-proxy
 ,aap-operator.v2.4.0-0.1726111804,aap-operator.v2.4.0-0.1726111413,4.10-4.17,4.5.11,1.4.8,6.2.7,1.0.7,4.9.2,1.0.2,,
 ,aap-operator.v2.4.0-0.1727259094,aap-operator.v2.4.0-0.1727257740,4.10-4.17,4.5.12,1.4.8,6.2.7,1.0.7,4.9.2,2.4.240919,,
 ,aap-operator.v2.4.0-0.1730153340,aap-operator.v2.4.0-0.1730152858,4.10-4.17,4.5.12,1.4.9,6.2.7,1.0.7,4.9.2,2.4.240919,,
@@ -22,3 +22,4 @@ Release Date,Operator CSV (Cluster-scoped),Operator CSV (Namespace-scoped),OpenS
 "June 9, 2025",aap-operator.v2.4.0-0.1749069693,aap-operator.v2.4.0-0.1749069319,4.10-4.18,4.5.23,1.5.5,6.2.18,1.0.7,4.9.4,2.4.250225,https://docs.redhat.com/en/documentation/red_hat_ansible_automation_platform/2.4/html-single/red_hat_ansible_automation_platform_release_notes/index#async-24-202500609,
 "July 2, 2025",aap-operator.v2.4.0-0.1750878254,aap-operator.v2.4.0-0.1750877268,4.10-4.18,4.5.24,1.5.7,6.2.18,1.0.7,4.9.4,2.4.250225,https://docs.redhat.com/en/documentation/red_hat_ansible_automation_platform/2.4/html-single/red_hat_ansible_automation_platform_release_notes/index#async-24-20250702,
 "July 30, 2025",aap-operator.v2.4.0-0.1753232791,aap-operator.v2.4.0-0.1753232084,4.10-4.18,4.5.24,1.5.7,6.2.18,1.0.7,4.9.4,2.4.250225,https://docs.redhat.com/en/documentation/red_hat_ansible_automation_platform/2.4/html-single/red_hat_ansible_automation_platform_release_notes/index#async-24-20250730,
+
