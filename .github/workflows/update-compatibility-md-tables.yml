@@ -44,14 +44,14 @@ jobs:
             -t "Red Hat Ansible Automation Platform 2.5 - OpenShift Operator Component versions" \
             ./data/AAP_25.csv > AAP_25.md
 
-      # 4. Generate the Markdown file for AAP 2.6
+      # 5. Generate the Markdown file for AAP 2.6
       - name: Generate AAP 2.6 Markdown Table
         run: |
           ./scripts/csv2md.sh \
             -t "Red Hat Ansible Automation Platform 2.6 - OpenShift Operator Component versions" \
             ./data/AAP_26.csv > AAP_26.md
 
-      # 5. Commit the updated Markdown files back to the repository
+      # 6. Commit the updated Markdown files back to the repository
       - name: Commit and push changes
         run: |
           # Configure git with the action's user
@@ -59,8 +59,8 @@ jobs:
           git config --local user.name "GitHub Action"
           
           # Add the generated files to the staging area
-          git add AAP_24.md AAP_25.md
-          
+          git add AAP_24.md AAP_25.md AAP_26.md
+
           # Check if there are any changes to commit.
           # The "git diff" command will exit with a non-zero status if there are changes.
           if ! git diff --staged --quiet; then
