@@ -28,4 +28,4 @@
 | August 27, 2025 | aap-operator.v2.4.0-0.1755833968 | aap-operator.v2.4.0-0.1755833431 | 4.10-4.18 | 4.5.25 | 1.5.7 | 6.2.19 | 1.0.7 | 4.9.5 | 2.4.250225 | [Release Notes](https://docs.redhat.com/en/documentation/red_hat_ansible_automation_platform/2.4/html-single/red_hat_ansible_automation_platform_release_notes/index#async-24-20250827) |  |
 | September 22, 2025 | aap-operator.v2.4.0-0.1758080293 | aap-operator.v2.4.0-0.1758079821 | 4.10-4.18 | 4.5.25 | 1.5.7 | 6.2.19 | 1.0.7 | 4.9.5 | 2.4.250225 | [Release Notes](https://docs.redhat.com/en/documentation/red_hat_ansible_automation_platform/2.4/html-single/red_hat_ansible_automation_platform_release_notes/index#async-24-20250922) |  |
 | October 21, 2025 | aap-operator.v2.4.0-0.1760618870 | aap-operator.v2.4.0-0.1760618328 | 4.10-4.18 | 4.5.26 | 1.6.0 | 6.2.19 | 1.0.7 | 4.9.5 | 2.4.250225 |  |  |
-| November 19, 2025 | aap-operator.v2.4.0-0.1763137360 | aap-operator.v2.4.0-0.1763136910 | 4.10-4.18 |  |  |  |  |  |  |  |  |
+| November 19, 2025 | aap-operator.v2.4.0-0.1763137360 | aap-operator.v2.4.0-0.1763136910 | 4.10-4.18 | 4.5.27 | 1.6.2 | 6.2.20 | 1.0.8 | 4.9.5 | 2.4.250225 |  |  |
