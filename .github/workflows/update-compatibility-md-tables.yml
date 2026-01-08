@@ -57,7 +57,7 @@ jobs:
           # Configure git with the action's user
           git config --local user.email "action@github.com"
           git config --local user.name "GitHub Action"
-          
+
           # Add the generated files to the staging area
           git add AAP_24.md AAP_25.md AAP_26.md
 
