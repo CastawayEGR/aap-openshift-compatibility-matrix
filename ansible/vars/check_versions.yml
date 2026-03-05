@@ -1,0 +1,36 @@
+---
+# AAP CSV compatibility matrix: column indices and OCP/channel loops
+# Edit this file to change OCP versions, channels, and AAP versions checked.
+
+columns:
+  release_date: 1
+  cluster_scoped: 2
+  namespace_scoped: 3
+  openshift_support: 4
+
+loops:
+  - ocp_version: "4.18"
+    channel: stable-2.4
+    aap_version: "2.4"
+    scope: namespace
+  - ocp_version: "4.18"
+    channel: stable-2.4-cluster-scoped
+    aap_version: "2.4"
+    scope: cluster
+  - ocp_version: "4.18"
+    channel: stable-2.5
+    aap_version: "2.5"
+    scope: namespace
+  - ocp_version: "4.18"
+    channel: stable-2.5-cluster-scoped
+    aap_version: "2.5"
+    scope: cluster
+  - ocp_version: "4.18"
+    channel: stable-2.6
+    aap_version: "2.6"
+    scope: namespace
+  - ocp_version: "4.18"
+    channel: stable-2.6-cluster-scoped
+    aap_version: "2.6"
+    scope: cluster
+...
