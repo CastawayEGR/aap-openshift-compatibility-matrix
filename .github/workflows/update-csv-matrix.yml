@@ -1,0 +1,48 @@
+# Run on demand: update AAP operator CSV compatibility matrix from Red Hat operator index,
+# then push any CSV changes back to the repo.
+#
+# Required repo secrets: REGISTRY_USERNAME, REGISTRY_PASSWORD (Red Hat registry credentials)
+
+name: Update AAP CSV matrix
+
+on:
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  update-csv:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Check out repository
+        uses: actions/checkout@v4
+
+      - name: Install Podman
+        run: |
+          sudo apt-get update
+          sudo apt-get install -y podman
+
+      - name: Install Ansible
+        run: python3 -m pip install ansible
+
+      - name: Run Ansible playbook
+        env:
+          REGISTRY_USERNAME: ${{ secrets.REGISTRY_USERNAME }}
+          REGISTRY_PASSWORD: ${{ secrets.REGISTRY_PASSWORD }}
+        run: |
+          cd ansible && ansible-playbook playbook.yml -i inventory.yml
+
+      - name: Commit and push CSV changes
+        run: |
+          git config --local user.email "action@github.com"
+          git config --local user.name "github-actions[bot]"
+
+          git add data/*.csv
+          if ! git diff --staged --quiet; then
+            git commit -m "chore: update AAP CSV compatibility matrix from operator index"
+            git push
+          else
+            echo "No CSV changes. Nothing to commit."
+          fi
