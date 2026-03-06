@@ -39,6 +39,7 @@ jobs:
         run: cd ansible && ansible-playbook playbook.yml -i inventory.yml
 
       - name: Commit and push CSV changes
+        id: csv-push
         run: |
           git config --local user.email "action@github.com"
           git config --local user.name "github-actions[bot]"
@@ -47,6 +48,38 @@ jobs:
           if ! git diff --staged --quiet; then
             git commit -m "chore: update AAP CSV compatibility matrix from operator index"
             git push
+            echo "pushed=true" >> "$GITHUB_OUTPUT"
           else
             echo "No CSV changes. Nothing to commit."
+            echo "pushed=false" >> "$GITHUB_OUTPUT"
+          fi
+
+      - name: Make csv2md script executable
+        if: steps.csv-push.outputs.pushed == 'true'
+        run: chmod +x scripts/csv2md.sh
+
+      - name: Generate Markdown tables from CSV
+        if: steps.csv-push.outputs.pushed == 'true'
+        run: |
+          ./scripts/csv2md.sh \
+            -t "Red Hat Ansible Automation Platform 2.4 - OpenShift Operator Component versions" \
+            ./data/AAP_24.csv > AAP_24.md
+          ./scripts/csv2md.sh \
+            -t "Red Hat Ansible Automation Platform 2.5 - OpenShift Operator Component versions" \
+            ./data/AAP_25.csv > AAP_25.md
+          ./scripts/csv2md.sh \
+            -t "Red Hat Ansible Automation Platform 2.6 - OpenShift Operator Component versions" \
+            ./data/AAP_26.csv > AAP_26.md
+
+      - name: Commit and push Markdown changes
+        if: steps.csv-push.outputs.pushed == 'true'
+        run: |
+          git config --local user.email "action@github.com"
+          git config --local user.name "github-actions[bot]"
+          git add AAP_24.md AAP_25.md AAP_26.md
+          if ! git diff --staged --quiet; then
+            git commit -m "docs: auto-generate markdown tables from CSV update"
+            git push
+          else
+            echo "No markdown changes to commit."
           fi
