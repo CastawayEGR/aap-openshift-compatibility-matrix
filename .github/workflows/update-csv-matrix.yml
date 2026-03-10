@@ -1,5 +1,6 @@
-# Run on demand: update AAP operator CSV compatibility matrix from Red Hat operator index,
-# then push any CSV changes back to the repo.
+# Update AAP operator CSV compatibility matrix from Red Hat operator index,
+# then push any CSV/markdown changes back to the repo.
+# Runs every 6 hours or when manually triggered.
 #
 # Required repo secrets: REGISTRY_USERNAME, REGISTRY_PASSWORD (Red Hat registry credentials)
 
@@ -7,6 +8,9 @@ name: Update AAP CSV matrix
 
 on:
   workflow_dispatch:
+  schedule:
+    # Every 6 hours, with one run at 23:30 UTC (right before midnight)
+    - cron: '30 23,5,11,17 * * *'
 
 permissions:
   contents: write
